@@ -1,1 +1,1 @@
-web: gunicorn.everyday_legends.wsgi
+web: gunicorn everyday_legends.wsgi
