@@ -30,7 +30,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['everyday-legends.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = [
+    'everyday-legends.herokuapp.com',
+    'localhost',
+    '8000-welshy92-everyday-legend-1a9n4fdgpo.us2.codeanyapp.com'
+    ]
 
 
 # Application definition
