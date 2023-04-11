@@ -62,6 +62,10 @@ Image from [Am I Responsive?](https://ui.dev/amiresponsive)
 Wireframes created using Balsamiq.
  
 ![Wireframe for Home page](/assets/images/home.png)
+![Wireframe for Champion List page](/assets/images/champion-list.png)
+![Wireframe for Login page](/assets/images/login.png)
+![Wireframe for Register page](/assets/images/register.png)
+![Wireframe for Contact Us page](/assets/images/contact-us.png)
  
 ### **Features**
  
