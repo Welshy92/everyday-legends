@@ -101,7 +101,7 @@ HTML, CSS, Javascript, Python, Markdown
 ### **Frameworks, Libraries & Programs Used**
  
 * [Balsamiq](https://balsamiq.com) - Used to create wireframes.
-* [Bootstrap] () - Used to help style the website
+* [Bootstrap V5.2](https://getbootstrap.com/docs/5.2/getting-started/download/) - Used to help style the website
 * [Django] () - 
 * [POSTGRESQL] () - 
 * [Git](https://git-scm.com) - For version control.
