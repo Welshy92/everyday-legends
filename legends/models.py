@@ -19,9 +19,12 @@ class Post(models.Model):
         ("ADC", "Marksman"),
         ("SUP", "Support"),
     ]
-    champion = models.ForeignKey(Champion.name)
+    champion = models.choices = [
+        ("1", "Aatrox"),
+        ("2", "Ahri"),
+    ]
     featured_image = CloudinaryField('image', default='placeholder')
-    excerpt = models.TextField(max_length=200 blank=True)
+    excerpt = models.TextField(max_length=200, blank=True)
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
