@@ -5,6 +5,19 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
+POSITION_CHOICES = [
+    ("TOP", "Top Lane"),
+    ("JNG", "Jungler"),
+    ("MID", "Mid Lane"),
+    ("ADC", "Marksman"),
+    ("SUP", "Support"),
+]
+
+
+class Champion(models.Model):
+    champion_name = models.CharField(max_length=100, unique=True)
+    primary_role = models.CharField(max_length=3, choices=POSITION_CHOICES)
+
 
 class Post(models.Model):
     title = models.CharField(max_length=100, unique=True)
@@ -12,17 +25,8 @@ class Post(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="legends_posts"
     )
-    position = models.choices = [
-        ("TOP", "Top Lane"),
-        ("JG", "Jungle"),
-        ("MID", "Mid Lane"),
-        ("ADC", "Marksman"),
-        ("SUP", "Support"),
-    ]
-    champion = models.choices = [
-        ("1", "Aatrox"),
-        ("2", "Ahri"),
-    ]
+    position = models.CharField(max_length=3, choices=POSITION_CHOICES)
+    champion = models.ManyToManyField(Champion)
     featured_image = CloudinaryField('image', default='placeholder')
     excerpt = models.TextField(max_length=200, blank=True)
     updated_on = models.DateTimeField(auto_now=True)
@@ -40,3 +44,12 @@ class Post(models.Model):
 
     def number_of_likes(self):
         return self.likes.count()
+
+
+class Comment(models.Model):
+    post = models.ForeignKey(Post, on_delete=models.CASCADE,
+                             related_name="comments")
+    name = models.ForeignKey(User, on_delete=models.CASCADE)
+    body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    approved = models.BooleanField(default=False)
