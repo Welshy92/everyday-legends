@@ -135,6 +135,7 @@ HTML, CSS, Javascript, Python, Markdown
 * [Git](https://git-scm.com) - For version control.
 * [Github](https://github.com) - To save and store all the files of the site.
 * [CodeAnywhere](https://codeanywhere.com/?ref=marcomartins11) - The IDE used for all of the coding. Also used to write the README.
+* [EmailJS](https://www.emailjs.com) - Used to help send the Contact Us form data to the site admin
 * [Google Fonts](https://fonts.google.com) - To import the fonts used on the site.
 * [Font Awesome](https://fontawesome.com) - For the down arrows used.
 * [OperaGX](https://www.opera.com/gx) - Dev Tools to troubleshoot and test features, solve issues with responsiveness and styling.
