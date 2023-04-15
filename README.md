@@ -22,40 +22,55 @@ Image from [Am I Responsive?](https://ui.dev/amiresponsive)
  
 ### Initial Discussion
  
- 
+League of Legends is a hugely popular online PC game developed by Riot Games, with millions of players playing every week. There are many different online reasources for the game. However most of these reasources use statistics pulled from the Riot Games API so there isn't a lot of room for player opinion.
+
+The purpose of this website it to provide a place where people can post their own tips and guides for specific champions, either in specific matchups or generally for a specified role. These posts will also be able to be liked by users to show that they found it particulary useful for themselves.
+
 ### **User Stories**
  
 #### Client Goals
  
-* 
+* As a user I should be able to register for an account and login.
+* As a user I should be able to view created posts.
+* As an admin I should be able to create an entry for a new champion that a user than then select when creating a new post.
+* As a registered user I should be able to create a post containing my guide/tips for a specific champion in a role.
+* As a registered user I should be able to like posts.
+* As a user I can contact the site owners to provide feedback or suggestions
  
 #### First Time Visitor Goals
  
-* 
+* I should be allowed to view posts that have been created by registered users.
+* I should be able to register for an account on the site.
+* I should be able to contact the site owners to provide feedback or suggestions
  
 #### Returning Visitor Goals
  
-* 
+* I should be allowed to view posts created by registered users.
+* I should be able to login (Or register if I have not done so at this point) to my account.
+* I should be able to create a post (if logged in).
+* I should be able to like a post (if logged in).
  
 ***
 ## **Design**
  
 ### **Colour Scheme**
  
-![My original chosen colour scheme](/assets/images/colour-scheme.png)
+![My original chosen colour scheme](/assets/images/colour_scheme.png)
+The colour scheme I have chosen is based off of the league of legends logo's gold and a very dark blue to provide a suitable contrast. This scheme is commonly used within various league of legends media so it will match the feel provided by Riot games.
  
 
  
 ### **Typography**
  
 [Google fonts](https://fonts.google.com) was used for the following fonts:
-* 
+* Cinzel - Used for the site logo and in the headings.
+* Rubik - Used as the default font across all content within the site.
  
-[Font Awesome]() was used for the down arrow icons used.
+[Font Awesome](https://fontawesome.com) was used for the Github and Linkedin logos in the footer.
  
 ### **Imagery**
  
-
+[Cloudinary]() was used as an external image hosting site, which is required due to the ephemeral system used with Heroku apps, which would cause all images to be lost if the app has to be rebuilt for any reason.
  
 ### **Wireframes**
  
@@ -79,6 +94,14 @@ Wireframes created using Balsamiq.
  #### **Champion Details page**
 ![Wireframe for Champion Details page](/assets/images/details.png)
 ![Wireframe for Desktop Champion Details page](/assets/images/details-alt.png)
+
+### **Database Design**
+
+As the project features will require the use of databases, I have provided a diagram, and an example of the database that will be setup, for the site below.
+![Champion database diagram](/assets/images/champion_diag.png)
+![Champion database example](/assets/images/champion_example.png)
+![Post database diagram](/assets/images/post_diag)
+![Post database example](/assets/images/post_example)
  
 ### **Features**
  
