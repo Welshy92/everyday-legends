@@ -56,6 +56,7 @@ The purpose of this website it to provide a place where people can post their ow
 ### **Colour Scheme**
  
 ![My original chosen colour scheme](/assets/images/colour_scheme.png)
+
 The colour scheme I have chosen is based off of the league of legends logo's gold and a very dark blue to provide a suitable contrast. This scheme is commonly used within various league of legends media so it will match the feel provided by Riot games.
  
 
@@ -98,10 +99,14 @@ Wireframes created using Balsamiq.
 ### **Database Design**
 
 As the project features will require the use of databases, I have provided a diagram, and an example of the database that will be setup, for the site below.
+
+#### **Champion database**
 ![Champion database diagram](/assets/images/champion_diag.png)
 ![Champion database example](/assets/images/champion_example.png)
-![Post database diagram](/assets/images/post_diag)
-![Post database example](/assets/images/post_example)
+
+#### **Post database**
+![Post database diagram](/assets/images/post_diag.png)
+![Post database example](/assets/images/post_example.png)
  
 ### **Features**
  
@@ -125,8 +130,8 @@ HTML, CSS, Javascript, Python, Markdown
  
 * [Balsamiq](https://balsamiq.com) - Used to create wireframes.
 * [Bootstrap V5.2](https://getbootstrap.com/docs/5.2/getting-started/download/) - Used to help style the website
-* [Django] () - 
-* [POSTGRESQL] () - 
+* [Django v3.2](https://www.djangoproject.com) - Used to help take a lot of the work out of a lot of things such as creating functions required for making my database models.
+* [POSTGRESQL](https://www.postgresql.org) - An open sourced database management system used in this project.
 * [Git](https://git-scm.com) - For version control.
 * [Github](https://github.com) - To save and store all the files of the site.
 * [CodeAnywhere](https://codeanywhere.com/?ref=marcomartins11) - The IDE used for all of the coding. Also used to write the README.
