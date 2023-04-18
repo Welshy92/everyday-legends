@@ -112,7 +112,7 @@ As the project features will require the use of databases, I have provided a dia
  
 ### **Future Implementations**
  
-* 
+* Password reset and email confirmation for account registration.
  
 ### **Accessibility**
  
@@ -131,6 +131,7 @@ HTML, CSS, Javascript, Python, Markdown
 * [Balsamiq](https://balsamiq.com) - Used to create wireframes.
 * [Bootstrap V5.2](https://getbootstrap.com/docs/5.2/getting-started/download/) - Used to help style the website
 * [Django v3.2](https://www.djangoproject.com) - Used to help take a lot of the work out of a lot of things such as creating functions required for making my database models.
+* [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - Used for making an authentication system on the website.
 * [POSTGRESQL](https://www.postgresql.org) - An open sourced database management system used in this project.
 * [Git](https://git-scm.com) - For version control.
 * [Github](https://github.com) - To save and store all the files of the site.
