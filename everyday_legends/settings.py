@@ -68,7 +68,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 CLOUDINARY_STORAGE = {
       'CLOUD_NAME': 'dhjdgxyle',
       'API_KEY': '233794497576499',
-      'API_SECRET': 'sTG-TDiWQbm8vz-w_gq-hfm1OKU',
+      'API_SECRET': os.environ.get("API_SECRET"),
       'API_PROXY': 'http://proxy.server:3128'
 }
 
