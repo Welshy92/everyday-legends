@@ -19,7 +19,7 @@ from legends import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
+    path('', include('legends.urls'), name='legends_urls'),
     path('contact', views.contact, name='contact'),
     path('accounts/', include('allauth.urls')),
     path('summernote/', include('django_summernote.urls')),

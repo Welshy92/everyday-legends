@@ -16,7 +16,8 @@ POSITION_CHOICES = [
 
 class Champion(models.Model):
     title = models.CharField(max_length=100, unique=True, default='champ name')
-    champion_name = models.CharField(max_length=100, unique=True, default='champ')
+    champion_name = models.CharField(max_length=100, unique=True,
+                                     default='champ')
     primary_role = models.CharField(max_length=3, choices=POSITION_CHOICES)
     slug = models.SlugField(max_length=100, unique=True, default='slug')
 
