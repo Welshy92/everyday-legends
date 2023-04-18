@@ -29,7 +29,6 @@ class Post(models.Model):
     )
     position = models.CharField(max_length=3, choices=POSITION_CHOICES)
     champion = models.ManyToManyField(Champion)
-    featured_image = CloudinaryField('image', default='placeholder')
     excerpt = models.TextField(max_length=200, blank=True)
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()

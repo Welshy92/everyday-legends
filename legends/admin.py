@@ -17,14 +17,13 @@ class PostAdmin(SummernoteModelAdmin):
 
 
 @admin.register(Champion)
-class PostAdmin(SummernoteModelAdmin):
+class PostAdmin(admin.ModelAdmin):
 
     list_display = ('champion_name', 'primary_role')
     search_fields = ['champion_name', 'primary_role']
-    list_filter = ('champion_name', 'primary_role')
+    list_filter = ('primary_role', 'champion_name')
     prepopulated_fields = {'slug': ('title',),
                            'champion_name': ('title',)}
-    summernote_fields = ('content',)
 
 
 @admin.register(Comment)
