@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&family=Rubik:wght@300&display=swap');
 
+/* Base page colouring */
+
 .main-style {
     background-color: #1A0035;
     color: #EFD690;
@@ -54,4 +56,10 @@ footer {
     padding-right: 5px;
     text-decoration: none;
     color: #EFD690;
+}
+
+/* Bootstrap form overrides */
+
+.btn {
+    colour: red
 }
