@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'django_summernote',
     'legends',
 ]
 
@@ -65,8 +66,8 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 # Cloudinary
 CLOUDINARY_STORAGE = {
-      'CLOUD_NAME': 'dhjdgxyle',  
-      'API_KEY': '233794497576499',  
+      'CLOUD_NAME': 'dhjdgxyle',
+      'API_KEY': '233794497576499',
       'API_SECRET': 'sTG-TDiWQbm8vz-w_gq-hfm1OKU',
       'API_PROXY': 'http://proxy.server:3128'
 }
