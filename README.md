@@ -113,6 +113,8 @@ As the project features will require the use of databases, I have provided a dia
 ### **Future Implementations**
  
 * Password reset and email confirmation for account registration.
+* A champion list page that displays basic information about the champion such as ability rundown and basic lore.
+* Use the Riot API to add champion winrate on current page to the above mentioned champion page.
  
 ### **Accessibility**
  
@@ -154,11 +156,10 @@ To do this I:
 2. This leads to the dashboard. I then clicked on "New" on the right hand side and clicked "Create New App".
 3. I set my app name to 'wow-ah-averages' and the region to Europe. Then I clicked "Create App"
 4. On the app page. I clicked onto the "Settings" tab, then "reveal config vars".
-5. I added 2 config Vars. First was called "CREDS" with the value being copied directly from my entire CREDS.json file. Second was called "PORT" with the value of "8000" to ensure deployment would work correctly.
-6. I then clicked "Add Buildpack" and added Python, saving the changes after. I then clicked it again and added nodejs, saving changes again.
-7. I then clicked onto the "Deploy" tab.
-8. On the "Deployment Method" section, I clicked to connect to github and searched for the "wow-ah-averages" repository and connected it.
-9. Further down the page, I enabled automatic deployments so that Heroku would rebuild and deploy the app whenever changes are pushed to the github repository. There is an option below to manually build the app if that is preferred.
+5. I added 5 config Vars. These were for the cloudinary URL + secret api key, the ElephantSQL database key, a port and a secret key
+6. I then clicked onto the "Deploy" tab.
+7. On the "Deployment Method" section, I clicked to connect to github and searched for the "everyday-legends" repository and connected it.
+8. Further down the page, I enabled automatic deployments so that Heroku would rebuild and deploy the app whenever changes are pushed to the github repository. There is an option below to manually build the app if that is preferred.
  
 ### **Local Development**
  
