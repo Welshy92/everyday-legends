@@ -5,7 +5,7 @@
 <div class="container-fluid">
     <div class="row">
 
-        <!-- Post Column -->
+        <!-- Post Column. Original code taken from https://github.com/Welshy92/i-think-blog/blob/main/templates/index.html  -->
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for post in post_list %}
@@ -30,6 +30,7 @@
                     </div>
                 </div>
                 {% if forloop.counter|divisibleby:3 %}
+        <!-- End of borrowed code -->
             </div>
             <div class="row">
                 {% endif %}

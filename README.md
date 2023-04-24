@@ -194,7 +194,7 @@ There are a few different sites that I used to learn the required skills to deve
  
 ### **Code Used**
  
-I have not copied any code from any source during this project.
+I have taken and edited some code for the basic templates to show my views on the home page. Code taken from https://github.com/Welshy92/i-think-blog/blob/main/templates/index.html
  
 ### **Media**
  
