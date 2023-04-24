@@ -41,7 +41,7 @@ class ContactUs(View):
 
 
 class PostLike(View):
-    
+
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
         if post.likes.filter(id=request.user.id).exists():
