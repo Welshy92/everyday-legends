@@ -197,13 +197,8 @@ There are a few different sites that I used to learn the required skills to deve
 I have taken and edited some code for the basic templates to show my views on the home page. Code taken from https://github.com/Welshy92/i-think-blog/blob/main/templates/index.html
  
 ### **Media**
- 
-Footer icons modified using icons from:
- 
-* [LinkedIn](https://www.linkedin.com)
- 
-* [GitHub](https://github.com)
- 
+
+* [Riot Developer Portal](https://developer.riotgames.com/docs/lol) - Official League of Legends position icons direct from Riots developer portal.
  
 ### **Acknowledgments**
  
