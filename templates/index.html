@@ -16,15 +16,15 @@
                             <div class="image-container">
                                 <img class="card-img-top">
                                     {% if "TOP" in post.position %}
-                                        <img src="../static/images/pos-top.png" width="100%">
+                                        <img src="../static/images/pos-top.png" alt="Top Lane">
                                     {% elif "JNG" in post.position %}
-                                        <img src="../static/images/pos-jng.png" width="100%">
+                                        <img src="../static/images/pos-jng.png" alt="Jungle">
                                     {% elif "MID" in post.position %}
-                                        <img src="../static/images/pos-mid.png" width="100%">
+                                        <img src="../static/images/pos-mid.png" alt="Mid Lane">
                                     {% elif "ADC" in post.position %}
-                                        <img src="../static/images/pos-adc.png" width="100%">
+                                        <img src="../static/images/pos-adc.png" alt="Marksman">
                                     {% elif "SUP" in post.position %}
-                                        <img src="../static/images/pos-sup.png" width="100%">
+                                        <img src="../static/images/pos-sup.png" alt="Support">
                                     {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>
