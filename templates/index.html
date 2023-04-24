@@ -2,6 +2,7 @@
 
 {% block content %}
 
+
 <div class="container-fluid">
     <div class="row">
 
@@ -13,8 +14,18 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
-                                <img class="card-img-top"
-                                    src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
+                                <img class="card-img-top">
+                                    {% if "TOP" in post.position %}
+                                        <img src="../static/images/pos-top.png" width="100%">
+                                    {% elif "JNG" in post.position %}
+                                        <img src="../static/images/pos-jng.png" width="100%">
+                                    {% elif "MID" in post.position %}
+                                        <img src="../static/images/pos-mid.png" width="100%">
+                                    {% elif "ADC" in post.position %}
+                                        <img src="../static/images/pos-adc.png" width="100%">
+                                    {% elif "SUP" in post.position %}
+                                        <img src="../static/images/pos-sup.png" width="100%">
+                                    {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>
                                 </div>
