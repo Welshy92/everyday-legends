@@ -12,6 +12,12 @@ class PostList(generic.ListView):
     paginate_by = 6
 
 
+class ChampList(generic.ListView):
+    model = Champion
+    queryset = Champion.objects.order_by('champion_name')
+    template_name = 'champions.html'
+
+
 class UserPost(View):
 
     def get(self, request, slug, *args, **kwargs):

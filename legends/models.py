@@ -21,6 +21,12 @@ class Champion(models.Model):
     primary_role = models.CharField(max_length=3, choices=POSITION_CHOICES)
     slug = models.SlugField(max_length=100, unique=True, default='slug')
 
+    class Meta:
+        ordering = ["champion_name"]
+
+    def __str__(self):
+        return self.champion_name
+
 
 class Post(models.Model):
     title = models.CharField(max_length=100, unique=True)
