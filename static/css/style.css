@@ -62,5 +62,9 @@ footer {
 /* Bootstrap form overrides */
 
 .btn {
-    color: red
+    color: red;
+}
+
+.pagination {
+    margin: 0;
 }

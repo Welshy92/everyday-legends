@@ -45,6 +45,7 @@ To make sure the errors displayed correctly on each data entry. I would enter th
 * MIME error appearing on deployed Heroku app, meaning my CSS stylesheet was not being loaded. Installed django-heroku and redeployed the app on Herouku.
 * Everyday Legends title in the nav bar link not working. Added correct href.
 * Making a new post (both successful and unsuccseful) rendered the next page incorrectly. Made invalid form recreate the form and a valid form now redirects to "index" which is the same as the home page.
+* The pagination button was causeing some whitespace on smaller screen sizes between the button and the footer. Fixed by overriding the margin size of the css class.
 
  
 ### **Known Bugs**
