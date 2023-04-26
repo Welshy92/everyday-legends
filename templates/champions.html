@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<p>TEST TEXT</p>
+<p>Hello {{ username }}! To edit or delete items from this list then please proceed to the <a href="{% url 'admin:index' %}">admin panel</a>.</p>
+<p>This should only be done in cases of an error or changes to a champion on riots end. DO NOT REMOVE any champion unless they have recieved a full rework that would make all guides obselete.</p>
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 mt-3 left">
@@ -10,16 +10,11 @@
                 {% for champ in champion_list %}
                 <div class="col-md-4">
                     <div class="card mb-4">
-                            <a href="#" class="post-link">
                                 <h2 class="card-title">{{ champ.champion_name }}</h2>
                                 <p class="card-text">{{ champ.title }} - {{ champ.primary_role }}</p>
                         </div>
                     </div>
                 </div>
-                {% if forloop.counter|divisibleby:3 %}
-            </div>
-            <div class="row">
-                {% endif %}
                 {% endfor %}
 
             </div>
