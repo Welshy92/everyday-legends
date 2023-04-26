@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
+from django.utils.text import slugify
 from .models import Post, Champion, Comment
-from .forms import CommentForm
+from .forms import CommentForm, PostForm
 
 
 class PostList(generic.ListView):
@@ -69,6 +70,29 @@ class UserPost(View):
                 "comment_form": CommentForm(),
             },
             )
+
+
+class NewPost(View):
+
+    def get(self, request, *args, **kwargs):
+        return render(
+            request,
+            "./create-post.html",
+            {"post_form": PostForm()},
+            )
+
+    def post(self, request, *args, **kwargs):
+
+        post_form = PostForm(data=request.POST)
+
+        if post_form.is_valid():
+            post_form.instance.author = request.user
+            post_form.instance.status = 1
+            postit = post_form.save()
+        else:
+            post_form = PostForm()
+
+        return render(request, "./index.html")
 
 
 class ContactUs(View):
