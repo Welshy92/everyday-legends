@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from django.utils.text import slugify
+from django.contrib import messages
 from .models import Post, Champion, Comment
 from .forms import CommentForm, PostForm
 
@@ -92,11 +92,12 @@ class NewPost(View):
 
             return HttpResponseRedirect('index')
         else:
+
             post_form = PostForm()
 
         return render(
             request,
-            "./create-post.html",
+            "./post-error.html",
             {"post_form": PostForm()},
             )
 
