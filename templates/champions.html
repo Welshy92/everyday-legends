@@ -1,22 +1,48 @@
 {% extends "base.html" %}
 
 {% block content %}
-<p>Hello {{ username }}! To edit or delete items from this list then please proceed to the <a href="{% url 'admin:index' %}">admin panel</a>.</p>
-<p>This should only be done in cases of an error or changes to a champion on riots end. DO NOT REMOVE any champion unless they have recieved a full rework that would make all guides obselete.</p>
+<h1>Champion List</h1>
+<hr>
+<p>Hello {{ user.username }}! To create, edit or delete items from this list then please proceed to the <a href="{% url 'admin:index' %}">admin panel</a>.</p>
+<p>This should only be done in cases of an error or changes to a champion on riots end, or a brand new champion is released. DO NOT REMOVE any champion unless they have recieved a full rework that would make all guides obselete.</p>
+<hr>
 <div class="container-fluid">
     <div class="row">
+
+        <!-- Post Column. Original code taken from https://github.com/Welshy92/i-think-blog/blob/main/templates/index.html  -->
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for champ in champion_list %}
                 <div class="col-md-4">
                     <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="image-container">
+                                <img class="card-img-top">
+                                    {% if "TOP" in champ.primary_role %}
+                                        <img src="../static/images/pos-top.png" alt="Top Lane">
+                                    {% elif "JNG" in champ.primary_role %}
+                                        <img src="../static/images/pos-jng.png" alt="Jungle">
+                                    {% elif "MID" in champ.primary_role %}
+                                        <img src="../static/images/pos-mid.png" alt="Mid Lane">
+                                    {% elif "ADC" in champ.primary_role %}
+                                        <img src="../static/images/pos-adc.png" alt="Marksman">
+                                    {% elif "SUP" in champ.primary_role %}
+                                        <img src="../static/images/pos-sup.png" alt="Support">
+                                    {% endif %}
+                                <div class="image-flash">
+                                    <p class="author">Author: {{ post.author }}</p>
+                                </div>
+                            </div>
                                 <h2 class="card-title">{{ champ.champion_name }}</h2>
-                                <p class="card-text">{{ champ.title }} - {{ champ.primary_role }}</p>
+                                <p class="card-text">{{ champ.title }}</p>
                         </div>
                     </div>
                 </div>
+                {% if forloop.counter|divisibleby:3 %}
+            </div>
+            <div class="row">
+                {% endif %}
                 {% endfor %}
-
             </div>
         </div>
     </div>
