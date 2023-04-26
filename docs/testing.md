@@ -43,6 +43,7 @@ To make sure the errors displayed correctly on each data entry. I would enter th
 * Option to logout was showing as login when already signed in. Added an if statment to the base.html navbar to see if user was authenticaed.
 * Champion list link on the navbar was showing regardless of login/user status. Added an if statement to the base.html to see if the user is staff.
 * MIME error appearing on deployed Heroku app, meaning my CSS stylesheet was not being loaded. Installed django-heroku and redeployed the app on Herouku.
+* Everyday Legends title in the nav bar link not working. Added correct href.
 
  
 ### **Known Bugs**
