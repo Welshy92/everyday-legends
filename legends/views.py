@@ -89,10 +89,16 @@ class NewPost(View):
             post_form.instance.author = request.user
             post_form.instance.status = 1
             postit = post_form.save()
+
+            return HttpResponseRedirect('index')
         else:
             post_form = PostForm()
 
-        return render(request, "./index.html")
+        return render(
+            request,
+            "./create-post.html",
+            {"post_form": PostForm()},
+            )
 
 
 class ContactUs(View):
