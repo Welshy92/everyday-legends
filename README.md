@@ -57,7 +57,7 @@ The purpose of this website it to provide a place where people can post their ow
  
 ![My original chosen colour scheme](/assets/images/colour_scheme.png)
 
-The colour scheme I have chosen is based off of the league of legends logo's gold and a very dark blue to provide a suitable contrast. This scheme is commonly used within various league of legends media so it will match the feel provided by Riot games.
+The colour scheme I have chosen is based off of the league of legends logo's gold and a very dark blue to provide a suitable contrast. I have brightened the gold a bit to provide a better contrast for the visually impaired. This scheme is commonly used within various league of legends media so it will match the feel provided by Riot games.
  
 
  
@@ -72,6 +72,8 @@ The colour scheme I have chosen is based off of the league of legends logo's gol
 ### **Imagery**
  
 [Cloudinary]() was used as an external image hosting site, which is required due to the ephemeral system used with Heroku apps, which would cause all images to be lost if the app has to be rebuilt for any reason.
+
+[Riot Developer Portal](https://developer.riotgames.com/docs/lol) - The positional icons used to display the champion role or position in the user post were downloaded from an official Riot Games source.
  
 ### **Wireframes**
  
@@ -93,6 +95,8 @@ Wireframes created using Balsamiq.
 ![Wireframe for Contact Us page](/assets/images/contact-us.png)
 
  #### **Champion Details page**
+ I had originally had a much bigger scope for the site but felt this was not required for the MVP. However this may be implemented in the future.
+
 ![Wireframe for Champion Details page](/assets/images/details.png)
 ![Wireframe for Desktop Champion Details page](/assets/images/details-alt.png)
 
@@ -115,6 +119,7 @@ As the project features will require the use of databases, I have provided a dia
 * Password reset and email confirmation for account registration.
 * A champion list page that displays basic information about the champion such as ability rundown and basic lore.
 * Use the Riot API to add champion winrate on current page to the above mentioned champion page.
+* Add full CRUD functionality to the champion list page instead of getting them to do it through the admin panel.
  
 ### **Accessibility**
  
@@ -134,7 +139,9 @@ HTML, CSS, Javascript, Python, Markdown
 * [Bootstrap V5.2](https://getbootstrap.com/docs/5.2/getting-started/download/) - Used to help style the website
 * [Django v3.2](https://www.djangoproject.com) - Used to help take a lot of the work out of a lot of things such as creating functions required for making my database models.
 * [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - Used for making an authentication system on the website.
+* [Django CrispyForms](https://django-crispy-forms.readthedocs.io/en/latest/) - Used to help quickly create forms on the new post page.
 * [POSTGRESQL](https://www.postgresql.org) - An open sourced database management system used in this project.
+* [ElephantSQL](https://www.elephantsql.com) - Used to quickly set up and maintain my POSTRESQL databases.
 * [Git](https://git-scm.com) - For version control.
 * [Github](https://github.com) - To save and store all the files of the site.
 * [CodeAnywhere](https://codeanywhere.com/?ref=marcomartins11) - The IDE used for all of the coding. Also used to write the README.
@@ -154,7 +161,7 @@ The site is deployed using Heroku. Visit the deployed site [here.](https://every
 To do this I:
 1. Logged into [Heroku](https://www.heroku.com)
 2. This leads to the dashboard. I then clicked on "New" on the right hand side and clicked "Create New App".
-3. I set my app name to 'wow-ah-averages' and the region to Europe. Then I clicked "Create App"
+3. I set my app name to 'everyday-legends' and the region to Europe. Then I clicked "Create App"
 4. On the app page. I clicked onto the "Settings" tab, then "reveal config vars".
 5. I added 5 config Vars. These were for the cloudinary URL + secret api key, the ElephantSQL database key, a port and a secret key
 6. I then clicked onto the "Deploy" tab.
@@ -187,10 +194,10 @@ This website is a solo project created by [myself.](https://github.com/Welshy92)
 ### **Learning Resources**
  
 There are a few different sites that I used to learn the required skills to develop this website.
-* [Code Institute](https://codeinstitute.net) - Used the LMS to learn about Agile development, Bootstrap, Testing, Django and more.
+* [Code Institute](https://codeinstitute.net) - Used the LMS to learn about Agile development, Bootstrap, Testing, Django and more. Also used their slack group to ask questions about various things.
 * Code Institute Slack - Used to get answers for specific queries.
-* [w3Schools](https://www.w3schools.com) - Used to double check some syntax for both CSS and Javascript.
 * [Stack Overflow](https://stackoverflow.com) - Used as my main search point after Slack to get the answers I needed.
+* [Django](https://docs.djangoproject.com/en/3.2/) - Documentation used for various parts of Django and it's libraries.
  
 ### **Code Used**
  
@@ -202,3 +209,6 @@ I have taken and edited some code for the basic templates to show my views on th
  
 ### **Acknowledgments**
  
+* [Jo Heyndels](https://www.linkedin.com/in/joke-heyndels/) - Member of the Code Institute team that helped me with a few of my Django and CodeAnywhere enquires/concerns.
+* [Niel McEwen](https://www.linkedin.com/in/niel-mcewen-43b3a0/?originalSubdomain=ie) - Member of the Code Institute team that also helped me with some of the CodeAnywhere enquiries/concerns.
+* [Kasia Bogucka](https://www.linkedin.com/in/kasbogucka/) - Member of the Code Insititute team that has created some nice video content for both this project specifically and for CodeAnywhere.

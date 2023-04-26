@@ -26,15 +26,19 @@ A full spelling and grammar check of the code + documents was completed by copyi
  
 ### **Full Testing**
  
-Full testing was performed on my Windows PC's OperaGX browser. 
- 
-#### **Introduction**
-I tested the program from start to
+Full testing was performed on my Windows 10 PC's OperaGX browser. Some other testing was performed on Google chrome and Mozilla Firefox on my Windows 11 laptop, and my google chrome browser on my Android phone. 
  
 #### **Validation**
-To make sure the errors displayed correctly on each data entry. I would enter the word 'cat' and then enter a 0, a -5 and a 1.5 entry to make sure that it wasn't possible to do an incorrect entry. I would then enter a positive integer above 0 to make sure it accepted the correct entry. Starting with Titansteel Bars.
- 
-
+I made sure that:
+* All links worked (opening in a seperate tab where needed).
+* All renders and redirects worked correctly.
+* Messages diplayed when needed and displayed correctly.
+* Nav bar showed correct links depending on the type of user.
+* Main user posts had full CRUD functionality.
+* Logged in users can like or comment on posts.
+* Login, Logout and registration features all work.
+* Contact us form works correctly. Verified that an email has been recieved.
+* Page is resposive towards the screen size.
  
 ## **Bugs**
  
