@@ -25,8 +25,5 @@ class EditForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = (
-            'champion',
-            'position',
-            'excerpt',
             'content',
         )

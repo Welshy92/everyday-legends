@@ -212,3 +212,4 @@ I have taken and edited some code for the basic templates to show my views on th
 * [Jo Heyndels](https://www.linkedin.com/in/joke-heyndels/) - Member of the Code Institute team that helped me with a few of my Django and CodeAnywhere enquires/concerns.
 * [Niel McEwen](https://www.linkedin.com/in/niel-mcewen-43b3a0/?originalSubdomain=ie) - Member of the Code Institute team that also helped me with some of the CodeAnywhere enquiries/concerns.
 * [Kasia Bogucka](https://www.linkedin.com/in/kasbogucka/) - Member of the Code Insititute team that has created some nice video content for both this project specifically and for CodeAnywhere.
+* [Ian Meigh](https://www.linkedin.com/in/ianmeigh/) - Code Institute Alumni that helped me figure out what to do with my EditPost view.

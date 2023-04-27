@@ -122,12 +122,9 @@ class EditPost(View):
 
         form = EditForm(data=request.POST)
         post = get_object_or_404(Post, slug=slug)
-        post.champion.set = form('champion')
-        post.position = form('position')
-        post.excerpt = form('excerpt')
-        post.content = form('content')
+        post.content = form['content']
         post.save()
-        return Redirect('index')
+        return HttpResponseRedirect(reverse('index'))
 
 
 class DeletePost(View):
