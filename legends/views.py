@@ -3,7 +3,7 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from .models import Post, Champion, Comment
-from .forms import CommentForm, PostForm
+from .forms import CommentForm, PostForm, EditForm
 
 
 class PostList(generic.ListView):
@@ -90,7 +90,7 @@ class NewPost(View):
             post_form.instance.status = 1
             postit = post_form.save()
 
-            return HttpResponseRedirect('index')
+            return HttpResponseRedirect(reverse('index'))
         else:
 
             post_form = PostForm()
@@ -104,35 +104,43 @@ class NewPost(View):
 
 class EditPost(View):
 
-    # def editid(request, post_id):
-    #     poster = get_object_or_404(Post, id=post_id)
+    def get(self, request, slug, *args, **kwargs):
 
-    def get(self, request, *args, **kwargs):
-
-        post = get_object_or_404(Post, id=id)
-        if request.method == "POST":
-            form = PostForm(request.POST, instance=post)
-            if form.is_valid():
-                form.save()
-                return redirect("index")
-        post_form = PostForm(instance=post)
+        post = get_object_or_404(Post, slug=slug)
+        edit_form = EditForm(instance=post)
         context = {
-            'post_form': PostForm()
+            'edit_form': edit_form
         }
 
         return render(
             request,
             "./edit-post.html",
-            {"post_form": PostForm()},
+            context,
             )
+
+    def post(self, request, slug, *args, **kwargs):
+
+        form = EditForm(data=request.POST)
+        post = get_object_or_404(Post, slug=slug)
+        post.champion.set = form('champion')
+        post.position = form('position')
+        post.excerpt = form('excerpt')
+        post.content = form('content')
+        post.save()
+        return Redirect('index')
 
 
 class DeletePost(View):
 
-    def delete_item(request, post_id):
-        item = get_object_or_404(Post, id=post_id)
+    def get(self, request, slug, *args, **kwargs):
+        item = get_object_or_404(Post, slug=slug)
         item.delete()
-        return redirect("index")
+        return HttpResponseRedirect(reverse('index'))
+
+    def post(self, request, slug, *args, **kwargs):
+        item = get_object_or_404(Post, slug=slug)
+        item.delete()
+        return HttpResponseRedirect(reverse('index'))
 
 
 class ContactUs(View):

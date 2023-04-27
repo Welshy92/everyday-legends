@@ -19,3 +19,14 @@ class PostForm(forms.ModelForm):
             'excerpt',
             'content',
         )
+
+
+class EditForm(forms.ModelForm):
+    class Meta:
+        model = Post
+        fields = (
+            'champion',
+            'position',
+            'excerpt',
+            'content',
+        )
