@@ -35,7 +35,6 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'everyday-legends.herokuapp.com',
     'localhost',
-    '8000-welshy92-everyday-legend-n3rrc1183d.us2.codeanyapp.com'
     ]
 
 
