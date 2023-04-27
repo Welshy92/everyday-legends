@@ -137,11 +137,6 @@ class DeletePost(View):
         item.delete()
         return HttpResponseRedirect(reverse('index'))
 
-    def post(self, request, slug, *args, **kwargs):
-        item = get_object_or_404(Post, slug=slug)
-        item.delete()
-        return HttpResponseRedirect(reverse('index'))
-
 
 class ContactUs(View):
     def get(self, request, *args, **kwargs):
