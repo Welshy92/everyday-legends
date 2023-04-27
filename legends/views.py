@@ -119,10 +119,9 @@ class EditPost(View):
             )
 
     def post(self, request, slug, *args, **kwargs):
-
-        form = EditForm(data=request.POST)
         post = get_object_or_404(Post, slug=slug)
-        post.content = form['content']
+        post.excerpt = request.POST['excerpt']
+        post.content = request.POST['content']
         post.save()
         return HttpResponseRedirect(reverse('index'))
 
