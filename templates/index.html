@@ -38,11 +38,17 @@
                             <hr />
                             <p class="card-text text-muted h6">{{ post.created_on}} <i class="far fa-heart"></i>
                                 {{ post.number_of_likes }}</p>
+                            {% if request.user == post.author %}
                             <p>
-                                <a href="{% url 'edit_post' %}">
+                                <a href="{% url 'edit_post' post.slug %}">
                                     <button type="submit">EDIT</button>
                                 </a>
+                                &nbsp;
+                                <a href="">
+                                    <button type="submit">DELETE</button>
+                                </a>
                             </p>
+                            {% endif %}
                         </div>
                     </div>
                 </div>

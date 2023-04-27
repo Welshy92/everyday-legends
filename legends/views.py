@@ -104,12 +104,38 @@ class NewPost(View):
 
 class EditPost(View):
 
+    # def editid(request, post_id):
+    #     poster = get_object_or_404(Post, id=post_id)
+
     def get(self, request, *args, **kwargs):
-        return render(request, "./edit-post.html")
+
+        post = get_object_or_404(Post, id=id)
+        if request.method == "POST":
+            form = PostForm(request.POST, instance=post)
+            if form.is_valid():
+                form.save()
+                return redirect("index")
+        post_form = PostForm(instance=post)
+        context = {
+            'post_form': PostForm()
+        }
+
+        return render(
+            request,
+            "./edit-post.html",
+            {"post_form": PostForm()},
+            )
+
+
+class DeletePost(View):
+
+    def delete_item(request, post_id):
+        item = get_object_or_404(Post, id=post_id)
+        item.delete()
+        return redirect("index")
 
 
 class ContactUs(View):
-
     def get(self, request, *args, **kwargs):
         return render(request, "./contact-us.html")
 

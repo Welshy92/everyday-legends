@@ -7,7 +7,7 @@ urlpatterns = [
     path("contact", views.ContactUs.as_view(), name="contact"),
     path("champions", views.ChampList.as_view(), name="champions"),
     path("post", views.NewPost.as_view(), name="new_post"),
-    path("edit", views.EditPost.as_view(), name="edit_post"),
+    path("edit/<slug:slug>", views.EditPost.as_view(), name="edit_post"),
     path("<slug:slug>", views.UserPost.as_view(), name="user_post"),
     path("like/<slug:slug>", views.PostLike.as_view(), name="post_like"),
 ]
