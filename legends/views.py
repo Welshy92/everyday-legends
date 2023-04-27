@@ -102,6 +102,12 @@ class NewPost(View):
             )
 
 
+class EditPost(View):
+
+    def get(self, request, *args, **kwargs):
+        return render(request, "./edit-post.html")
+
+
 class ContactUs(View):
 
     def get(self, request, *args, **kwargs):
