@@ -144,6 +144,11 @@ footer {
     text-align: center;
 }
 
+.main-p > a {
+    color: white;
+    text-decoration-color: white;
+}
+
 .home-h3 {
     text-align: center;
     font-size: 100%;
@@ -155,6 +160,18 @@ footer {
     border: 1px solid #EFD690;
     opacity: .7;
     margin: 1rem 10vw;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -217,8 +234,11 @@ footer {
     position: relative;
     border-top: 5px solid #1A0035;
     border-radius: 0px 0px 15px 15px;
-    left: 35%;
     width: 30%
+}
+
+form > .post-btn2{
+    left: 35%
 }
 
 @media screen and (min-width: 768px) {
