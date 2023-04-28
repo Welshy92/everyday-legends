@@ -93,7 +93,9 @@ class NewPost(View):
             messages.success(request, "Your post has been created!")
             return HttpResponseRedirect(reverse('index'))
         else:
-            messages.error(request, "The form was not valid. Please follow the instructions and try again!")
+            messages.error(
+                request,
+                "The form was not valid. Please follow the instructions and try again!")
             post_form = PostForm()
 
             return render(
