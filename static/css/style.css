@@ -6,6 +6,10 @@
 
 /* Base page colouring */
 
+body {
+    background-color: #1A0035;
+}
+
 .main-style {
     background-color: #1A0035;
     color: #EFD690;
@@ -69,4 +73,31 @@ footer {
 
 .pagination {
     margin: 0;
+}
+
+.card-body {
+    background-color: rgb(120, 127, 135);
+}
+
+.card-title {
+    color: #EFD690;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+/* User post list that appears on the home page */
+
+.card-text {
+    color: #EFD690;
+}
+
+.user-post {
+    text-decoration: underline;
+    text-decoration-color: #1A0035;
+}
+
+.authored-text {
+    color: black;
 }
