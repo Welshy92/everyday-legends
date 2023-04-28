@@ -90,16 +90,17 @@ class NewPost(View):
             post_form.instance.status = 1
             postit = post_form.save()
 
+            messages.success(request, "Your post has been created!")
             return HttpResponseRedirect(reverse('index'))
         else:
-
+            messages.error(request, "The form was not valid. Please follow the instructions and try again!")
             post_form = PostForm()
 
-        return render(
-            request,
-            "./post-error.html",
-            {"post_form": PostForm()},
-            )
+            return render(
+                request,
+                "./create-post.html",
+                {"post_form": PostForm()},
+                )
 
 
 class EditPost(View):
@@ -123,6 +124,7 @@ class EditPost(View):
         post.excerpt = request.POST['excerpt']
         post.content = request.POST['content']
         post.save()
+        messages.success(request, "Your changes have been saved!")
         return HttpResponseRedirect(reverse('index'))
 
 
