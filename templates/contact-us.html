@@ -17,12 +17,12 @@
             <p class="uppercase text-center">Got a request? Or maybe just some feedback? We would be happy to hear from you! Just fill in the form below.</p>
 
             <div class="center-form">
-                <form onsubmit="return sendMail(this);">
+                <form onsubmit="return sendMail(this);" name="contact-form">
                     <input type="text" name="name" id="name" class="form-control" placeholder="Name/Username" required />
                     <textarea rows="5" name="details" id="details" class="form-control" placeholder="Suggestion/Feedback here." required></textarea>
                     <div class="form-row text-center">
                         <div class="col">
-                            <button type="submit" class="btn btn-secondary">Send request</button>
+                            <button type="submit" class="btn btn-secondary" onclick="emailSent()">Send request</button>
                         </div>
                     </div>
                 </form>
