@@ -133,6 +133,7 @@ class DeletePost(View):
     def get(self, request, slug, *args, **kwargs):
         item = get_object_or_404(Post, slug=slug)
         item.delete()
+        messages.info(request, "Your post was sucessfully deleted.")
         return HttpResponseRedirect(reverse('index'))
 
 
