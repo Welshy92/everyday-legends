@@ -16,14 +16,12 @@
             <h1 class="main-h1">Got something to say?</h3>
             <p class="main-p">Got a request? Or maybe just some feedback? We would be happy to hear from you! Just fill in the form below.</p>
 
-            <div class="center-form">
+            <div class="shift-div">
                 <form onsubmit="return sendMail(this);" name="contact-form">
                     <input type="text" name="name" id="name" class="form-control form-extra" placeholder="Name/Username" required />
                     <textarea rows="5" name="details" id="details" class="form-control form-extra" placeholder="Suggestion/Feedback here." required></textarea>
-                    <div class="form-row">
-                        <div class="col">
-                            <button type="submit" class="btn btn-secondary post-btn post-btn2" onclick="emailSent()">Send request</button>
-                        </div>
+                    <div>
+                        <button type="submit" class="btn btn-secondary post-btn2 post-btn" onclick="emailSent()">Send request</button>
                     </div>
                 </form>
             </div>
