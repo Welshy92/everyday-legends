@@ -9,6 +9,7 @@
 .main-style {
     background-color: #1A0035;
     color: #EFD690;
+    border-bottom: 30px solid #1A0035;
 }
 
 /* Nav Bar Styling */
@@ -31,11 +32,12 @@
 
 /* Footing styling */
 footer {
-    position: sticky;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 30px;
     border: 3px solid #1A0035;
+    margin-top: 30px; background-color: #1A0035;
 }
 
 .foot {
