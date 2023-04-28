@@ -79,18 +79,36 @@ footer {
     background-color: rgb(120, 127, 135);
 }
 
+.card {
+    --bs-card-border-color: #EFD690;
+}
+
 .card-title {
     color: #EFD690;
 }
 
 .card-body {
-    padding: 10px;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.navbar {
+    margin-bottom: 25px;
 }
 
 /* User post list that appears on the home page */
 
 .card-text {
     color: #EFD690;
+}
+
+.author {
+    color: #1A0035;
+    margin-bottom: 1px;
+    position: relative;
+    top: 15px;
 }
 
 .user-post {
@@ -100,4 +118,39 @@ footer {
 
 .authored-text {
     color: black;
+    font-size: 0.9rem;
+}
+
+.image-container {
+    position: relative;
+    top: -10px;
+}
+
+.card-body > .post-hr {
+    opacity: 1.0;
+    border: 2px solid black;
+}
+
+/* Heading Styles */
+
+.main-h1 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main-h3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 120%;
+}
+
+@media screen and (max-width: 950px) {
+    .main-h1 {
+        text-align: center;
+    }
+
+    .main-h3 {
+        text-align: center;
+        font-size: 100%;
+    }
 }

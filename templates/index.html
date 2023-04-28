@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Welcome To Everyday Legends!</h1>
-<h3>Your number 1 source to get your opinion on the game heard.</h3>
+<h1 class="main-h1">Welcome To Everyday Legends!</h1>
+<h3 class="main-h3">Your number 1 source to get your opinion on the game heard.</h3>
 
 <div class="container-fluid">
     <div class="row">
@@ -27,15 +27,15 @@
                                     {% elif "SUP" in post.position %}
                                         <img src="../static/images/pos-sup.png" alt="Support">
                                     {% endif %}
-                                <div class="image-flash">
-                                    <p class="author">Author: {{ post.author }}</p>
-                                </div>
                             </div>
                             <a href="{% url 'user_post' post.slug  %}" class="user-post">
                                 <h2 class="card-title">{{ post.title }}</h2>
                                 <p class="card-text">{{ post.excerpt }}</p>
                             </a>
-                            <hr />
+                            <div>
+                                <p class="author">By: {{ post.author }}</p>
+                            </div>
+                            <hr class="post-hr">
                             <p class="authored-text h6">{{ post.created_on}} <i class="far fa-heart"></i>
                                 {{ post.number_of_likes }}</p>
                             {% if request.user == post.author %}
