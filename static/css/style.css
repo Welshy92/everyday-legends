@@ -173,6 +173,7 @@ footer {
 .form-label {
     padding-left: 40px;
     padding-right: 40px;
+    font-size: 125%;
 }
 
 .form-select[multiple] {
@@ -204,8 +205,8 @@ footer {
     }
     
     .form-label {
-        padding-left: 18vw;
-        padding-right: 18vw;
+        padding-left: 16vw;
+        padding-right: 16vw;
     }
     
     .form-select[multiple] {
