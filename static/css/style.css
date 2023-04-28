@@ -67,10 +67,6 @@ footer {
 
 /* Bootstrap form overrides */
 
-.btn {
-    color: red;
-}
-
 .pagination {
     margin: 0;
 }
@@ -134,23 +130,91 @@ footer {
 /* Heading Styles */
 
 .main-h1 {
+    text-align: center;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.main-h3 {
+.main-p {
+    padding-left: 11vw;
+    padding-right: 11vw;
+}
+
+.home-h3 {
+    text-align: center;
+    font-size: 100%;
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 120%;
 }
+
 
 @media screen and (max-width: 950px) {
     .main-h1 {
         text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
-    .main-h3 {
-        text-align: center;
-        font-size: 100%;
+    .main-p {
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+}
+
+/* Crispy form styling overrides */
+
+.form-control {
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+}
+
+.form-label {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.form-select[multiple] {
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 30px solid #1A0035;
+    border-right: 30px solid #1A0035;
+}
+
+.form-select {
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 30px solid #1A0035;
+    border-right: 30px solid #1A0035;
+}
+
+.post-btn{
+    color: #1A0035;
+    background-color: #EFD690;
+    position: relative;
+    left: 35%;
+    width: 30%
+}
+
+@media screen and (min-width: 768px) {
+    .form-control {
+        border-left: 15vw solid transparent;
+        border-right: 15vw solid transparent;
+    }
+    
+    .form-label {
+        padding-left: 18vw;
+        padding-right: 18vw;
+    }
+    
+    .form-select[multiple] {
+        border-left: 15vw solid #1A0035;
+        border-right: 15vw solid #1A0035;
+    }
+    
+    .form-select {
+        border-left: 15vw solid #1A0035;
+        border-right: 15vw solid #1A0035;
     }
 }
