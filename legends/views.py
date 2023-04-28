@@ -151,4 +151,4 @@ class PostLike(View):
         else:
             post.likes.add(request.user)
 
-        return HttpResponseRedirect(reverse('user-post', args=[slug]))
+        return HttpResponseRedirect(reverse('user_post', args=[slug]))

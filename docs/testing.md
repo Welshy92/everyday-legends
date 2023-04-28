@@ -51,6 +51,7 @@ I made sure that:
 * Making a new post (both successful and unsuccseful) rendered the next page incorrectly. Made invalid form recreate the form and a valid form now redirects to "index" which is the same as the home page.
 * The pagination button was causeing some whitespace on smaller screen sizes between the button and the footer. Fixed by overriding the margin size of the css class.
 * Submit button in create post was hiding behind the footer. Added a 30 pixel boarder at the bottom of the main-content to ensure the footer is pushed below the content.
+* Liking a post was throwing up an error for incorrect attribute "user-post". Corrected to "user_post".
 
  
 ### **Known Bugs**
