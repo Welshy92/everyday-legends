@@ -12,19 +12,6 @@
                 </h1>
                 <p class="post-subtitle">{{ post.author }} | {{ post.created_on }} </p>
             </div>
-            <div class="d-none d-md-block col-md-6 masthead-image">
-                {% if "TOP" in post.position %}
-                <img src="../static/images/pos-top.png" alt="Top Lane">
-                {% elif "JNG" in post.position %}
-                <img src="../static/images/pos-jng.png" alt="Jungle">
-                {% elif "MID" in post.position %}
-                <img src="../static/images/pos-mid.png" alt="Mid Lane">
-                {% elif "ADC" in post.position %}
-                <img src="../static/images/pos-adc.png" alt="Marksman">
-                {% elif "SUP" in post.position %}
-                <img src="../static/images/pos-sup.png" alt="Support">
-                {% endif %}
-            </div>
         </div>
     </div>
 </div>
