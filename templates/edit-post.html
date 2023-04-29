@@ -7,7 +7,9 @@
 <form method="post" style="margin-top: 1.3em;">
     {{ edit_form | crispy }}
     {% csrf_token %}
-    <button type="submit" class="btn btn-singup btn-lg">Submit</button>
+    <div class="btn-signup">
+        <button type="submit" class="btn btn-lg">Save</button>
+    </div>
 </form>
 
 {% endblock%}

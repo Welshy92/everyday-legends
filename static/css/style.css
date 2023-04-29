@@ -304,6 +304,16 @@ strong > .text-secondary {
     padding-left: 10px;
     align-items: flex-end;
 }
+
+.btn-signup {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-signup > button {
+    background-color: #EFD690;
+    color: #010020;
+}
    
 @media screen and (min-width: 768px) {
     .form-control {
