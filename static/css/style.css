@@ -1,312 +1,312 @@
-/* Main Background colour #1A0035 . Main Text colour #EFD690*/
+/* Main Background colour #010020 . Main Text colour #EFD690*/
 /* Title font font-family: 'Cinzel', serif;
    Main text font font-family: 'Rubik', sans-serif; */
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&family=Rubik:wght@300&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&family=Rubik:wght@300&display=swap');
 
-/* Base page colouring */
-
-body {
-    background-color: #1A0035;
-}
-
-.main-style {
-    background-color: #1A0035;
-    color: #EFD690;
-    border-bottom: 35px solid #1A0035;
-}
-
-/* Nav Bar Styling */
-
-.bg-navi {
-    background-color: #EFD690;
-    color: #1A0035;
-    font-family: 'Cinzel', serif;
-}
-
-.nav-link {
-    color: #1A0035;
-}
-
-.active {
-    color: black;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-/* Footing styling */
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 30px;
-    border-top: 1px solid #EFD690;
-    border-bottom: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    margin-top: 30px; background-color: #1A0035;
-}
-
-.foot {
-    display: inline-flex;
-    width: 100%;
-    margin-bottom: 0px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: #1A0035;
-    color: #EFD690;
-}
-
-.foot > li {
-    list-style-type: none;
-}
-
-.foot > li > a {
-    padding-left: 5px;
-    padding-right: 5px;
-    text-decoration: none;
-    color: #EFD690;
-}
-
-/* Bootstrap form overrides */
-
-.pagination {
-    margin: 0;
-}
-
-.card-body {
-    background-color: rgb(120, 127, 135);
-}
-
-.h3-post {
-    background-color: rgb(120, 127, 135);
-    margin-bottom: 0px;
-    border-bottom: 8px solid rgb(120, 127, 135);
-    padding-left: 5px;
-}
-
-.no-pad {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.card {
-    --bs-card-border-color: #EFD690;
-}
-
-.card-title {
-    color: #EFD690;
-}
-
-.card-body {
-    padding-top: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-}
-
-.navbar {
-    margin-bottom: 25px;
-}
-
-/* User post list that appears on the home page */
-
-.card-text {
-    color: #EFD690;
-}
-
-.author {
-    color: #1A0035;
-    margin-bottom: 1px;
-    position: relative;
-    top: 15px;
-}
-
-.user-post {
-    text-decoration: underline;
-    text-decoration-color: #1A0035;
-}
-
-.authored-text {
-    color: black;
-    font-size: 0.9rem;
-}
-
-.image-container {
-    position: relative;
-    top: -10px;
-}
-
-.card-body > .post-hr {
-    opacity: 1.0;
-    border: 2px solid black;
-}
-
-/* Text stylings */
-
-.main-h1 {
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.main-p {
-    padding-left: 11vw;
-    padding-right: 11vw;
-    text-align: center;
-}
-
-.main-p > a {
-    color: white;
-    text-decoration-color: white;
-}
-
-.home-h3 {
-    text-align: center;
-    font-size: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.main-hr {
-    border: 1px solid #EFD690;
-    opacity: .7;
-    margin: 1rem 10vw;
-}
-
-.login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.signup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-@media screen and (max-width: 950px) {
-    .main-h1 {
-        text-align: center;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .main-p {
-        padding-left: 23px;
-        padding-right: 23px;
-    }
-
-    .main-hr {
-        margin: 1rem 18px;
-    }
-}
-
-/* Crispy form styling overrides */
-
-.form-control {
-    border-top: 0px solid transparent;
-    border-bottom: 0px solid transparent;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-}
-
-.form-label {
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 125%;
-}
-
-textarea > #id_body {
-    border-right : 2.5% solid transparent;
-    border-left : 2.5% solid transparent;
-}
-
-.form-select[multiple] {
-    border-top: 0px solid transparent;
-    border-bottom: 0px solid transparent;
-    border-left: 30px solid #1A0035;
-    border-right: 30px solid #1A0035;
-}
-
-.form-select {
-    border-top: 0px solid transparent;
-    border-bottom: 0px solid transparent;
-    border-left: 30px solid #1A0035;
-    border-right: 30px solid #1A0035;
-}
-
-.form-extra {
-    border-top: 0px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-}
-
-.post-btn {
-    color: #1A0035;
-    background-color: #EFD690;
-    position: relative;
-    border-top: 5px solid #1A0035;
-    border-radius: 0px 0px 15px 15px;
-    width: 30%
-}
-
-.post-btn2 {
-    left: 35%
-}
-
-
-strong > .text-secondary {
-    font-size: 21px;
-}
-
-.text-secondary {
-    color: black !important;
-    position: relative;
-    bottom: 0;
-}
-
-.btn-like {
-    background-color: #1A0035;
-    color: #EFD690;
-}
-
-.post-body {
-    padding-left: 10px;
-    align-items: flex-end;
-}
-
-@media screen and (min-width: 768px) {
-    .form-control {
-        border-left: 15vw solid transparent;
-        border-right: 15vw solid transparent;
-    }
-
-    #id_body {
-        border-right : 2px solid transparent;
-        border-left : 2px solid transparent;
-    }
-
-    #div_id_body > .form-label {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    
-    .form-label {
-        padding-left: 16vw;
-        padding-right: 16vw;
-    }
-    
-    .form-select[multiple] {
-        border-left: 15vw solid #1A0035;
-        border-right: 15vw solid #1A0035;
-    }
-    
-    .form-select {
-        border-left: 15vw solid #1A0035;
-        border-right: 15vw solid #1A0035;
-    }
-}
+   /* Base page colouring */
+   
+   body {
+       background-color: #010020;
+   }
+   
+   .main-style {
+       background-color: #010020;
+       color: #EFD690;
+       border-bottom: 35px solid #010020;
+   }
+   
+   /* Nav Bar Styling */
+   
+   .bg-navi {
+       background-color: #EFD690;
+       color: #010020;
+       font-family: 'Cinzel', serif;
+   }
+   
+   .nav-link {
+       color: #010020;
+   }
+   
+   .active {
+       color: black;
+       text-decoration: underline;
+       font-weight: bold;
+   }
+   
+   /* Footing styling */
+   footer {
+       position: fixed;
+       bottom: 0;
+       width: 100%;
+       height: 30px;
+       border-top: 1px solid #EFD690;
+       border-bottom: 0px;
+       border-left: 0px;
+       border-right: 0px;
+       margin-top: 30px; background-color: #010020;
+   }
+   
+   .foot {
+       display: inline-flex;
+       width: 100%;
+       margin-bottom: 0px;
+       justify-content: space-around;
+       flex-wrap: wrap;
+       background-color: #010020;
+       color: #EFD690;
+   }
+   
+   .foot > li {
+       list-style-type: none;
+   }
+   
+   .foot > li > a {
+       padding-left: 5px;
+       padding-right: 5px;
+       text-decoration: none;
+       color: #EFD690;
+   }
+   
+   /* Bootstrap form overrides */
+   
+   .pagination {
+       margin: 0;
+   }
+   
+   .card-body {
+       background-color: rgb(120, 127, 135);
+   }
+   
+   .h3-post {
+       background-color: rgb(120, 127, 135);
+       margin-bottom: 0px;
+       border-bottom: 8px solid rgb(120, 127, 135);
+       padding-left: 5px;
+   }
+   
+   .no-pad {
+       padding-left: 0px;
+       padding-right: 0px;
+   }
+   
+   .card {
+       --bs-card-border-color: #EFD690;
+   }
+   
+   .card-title {
+       color: #EFD690;
+   }
+   
+   .card-body {
+       padding-top: 0px;
+       padding-left: 10px;
+       padding-right: 10px;
+       padding-bottom: 5px;
+   }
+   
+   .navbar {
+       margin-bottom: 25px;
+   }
+   
+   /* User post list that appears on the home page */
+   
+   .card-text {
+       color: #EFD690;
+   }
+   
+   .author {
+       color: #010020;
+       margin-bottom: 1px;
+       position: relative;
+       top: 15px;
+   }
+   
+   .user-post {
+       text-decoration: underline;
+       text-decoration-color: #010020;
+   }
+   
+   .authored-text {
+       color: black;
+       font-size: 0.9rem;
+   }
+   
+   .image-container {
+       position: relative;
+       top: -10px;
+   }
+   
+   .card-body > .post-hr {
+       opacity: 1.0;
+       border: 2px solid black;
+   }
+   
+   /* Text stylings */
+   
+   .main-h1 {
+       text-align: center;
+       padding-left: 20px;
+       padding-right: 20px;
+   }
+   
+   .main-p {
+       padding-left: 11vw;
+       padding-right: 11vw;
+       text-align: center;
+   }
+   
+   .main-p > a {
+       color: white;
+       text-decoration-color: white;
+   }
+   
+   .home-h3 {
+       text-align: center;
+       font-size: 100%;
+       padding-left: 20px;
+       padding-right: 20px;
+   }
+   
+   .main-hr {
+       border: 1px solid #EFD690;
+       opacity: .7;
+       margin: 1rem 10vw;
+   }
+   
+   .login {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   
+   .signup {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   
+   
+   @media screen and (max-width: 950px) {
+       .main-h1 {
+           text-align: center;
+           padding-left: 20px;
+           padding-right: 20px;
+       }
+   
+       .main-p {
+           padding-left: 23px;
+           padding-right: 23px;
+       }
+   
+       .main-hr {
+           margin: 1rem 18px;
+       }
+   }
+   
+   /* Crispy form styling overrides */
+   
+   .form-control {
+       border-top: 0px solid transparent;
+       border-bottom: 0px solid transparent;
+       border-left: 30px solid transparent;
+       border-right: 30px solid transparent;
+   }
+   
+   .form-label {
+       padding-left: 40px;
+       padding-right: 40px;
+       font-size: 125%;
+   }
+   
+   textarea > #id_body {
+       border-right : 2.5% solid transparent;
+       border-left : 2.5% solid transparent;
+   }
+   
+   .form-select[multiple] {
+       border-top: 0px solid transparent;
+       border-bottom: 0px solid transparent;
+       border-left: 30px solid #010020;
+       border-right: 30px solid #010020;
+   }
+   
+   .form-select {
+       border-top: 0px solid transparent;
+       border-bottom: 0px solid transparent;
+       border-left: 30px solid #010020;
+       border-right: 30px solid #010020;
+   }
+   
+   .form-extra {
+       border-top: 0px solid transparent;
+       border-bottom: 10px solid transparent;
+       border-left: 30px solid transparent;
+       border-right: 30px solid transparent;
+   }
+   
+   .post-btn {
+       color: #010020;
+       background-color: #EFD690;
+       position: relative;
+       border-top: 5px solid #010020;
+       border-radius: 0px 0px 15px 15px;
+       width: 30%
+   }
+   
+   .post-btn2 {
+       left: 35%
+   }
+   
+   
+   strong > .text-secondary {
+       font-size: 21px;
+   }
+   
+   .text-secondary {
+       color: black !important;
+       position: relative;
+       bottom: 0;
+   }
+   
+   .btn-like {
+       background-color: #010020;
+       color: #EFD690;
+   }
+   
+   .post-body {
+       padding-left: 10px;
+       align-items: flex-end;
+   }
+   
+   @media screen and (min-width: 768px) {
+       .form-control {
+           border-left: 15vw solid transparent;
+           border-right: 15vw solid transparent;
+       }
+   
+       #id_body {
+           border-right : 2px solid transparent;
+           border-left : 2px solid transparent;
+       }
+   
+       #div_id_body > .form-label {
+           padding-left: 5px;
+           padding-right: 5px;
+       }
+       
+       .form-label {
+           padding-left: 16vw;
+           padding-right: 16vw;
+       }
+       
+       .form-select[multiple] {
+           border-left: 15vw solid #010020;
+           border-right: 15vw solid #010020;
+       }
+       
+       .form-select {
+           border-left: 15vw solid #010020;
+           border-right: 15vw solid #010020;
+       }
+   }
