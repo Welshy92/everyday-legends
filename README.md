@@ -26,6 +26,8 @@ League of Legends is a hugely popular online PC game developed by Riot Games, wi
 
 The purpose of this website is to provide a place where people can post their own tips and guides for specific champions, either in specific matchups or generally for a specified role. These posts will also be able to get liked by users to show that they found it particularly useful for themselves, or give their comments to the posts.
 
+I used some agile methodology while working on the project as seen on my github projects page [HERE](https://github.com/users/Welshy92/projects/5/).
+
 
 ### **User Stories**
  
