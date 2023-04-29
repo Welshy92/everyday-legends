@@ -1,10 +1,9 @@
 # **Everyday Legends**
  
-Everyday legends is a platform in which players of the game 'League of Legends' can post, like and comment about certain matchups or guides on a specific champion.
+Everyday legends is a platform in which players of the game 'League of Legends' can post, like and comment about certain matchups or guides on a specific champion within the game.
  
-![Image from amiresponsive](/assets/images/amiresponsive.png)
+![Responsive View of home page](/assets/images/responsive.png)
  
-Image from [Am I Responsive?](https://ui.dev/amiresponsive)
  
 [Everyday Legends live on Heroku](https://everyday-legends.herokuapp.com)
  
@@ -22,9 +21,11 @@ Image from [Am I Responsive?](https://ui.dev/amiresponsive)
  
 ### Initial Discussion
  
-League of Legends is a hugely popular online PC game developed by Riot Games, with millions of players playing every week. There are many different online reasources for the game. However most of these reasources use statistics pulled from the Riot Games API so there isn't a lot of room for player opinion.
+League of Legends is a hugely popular online PC game developed by Riot Games, with millions of players playing every week. There are many different online resources for the game. However most of these resources use statistics pulled from the Riot Games API so there isn't a lot of room for player opinion.
 
-The purpose of this website it to provide a place where people can post their own tips and guides for specific champions, either in specific matchups or generally for a specified role. These posts will also be able to be liked by users to show that they found it particulary useful for themselves.
+
+The purpose of this website is to provide a place where people can post their own tips and guides for specific champions, either in specific matchups or generally for a specified role. These posts will also be able to get liked by users to show that they found it particularly useful for themselves, or give their comments to the posts.
+
 
 ### **User Stories**
  
@@ -32,9 +33,10 @@ The purpose of this website it to provide a place where people can post their ow
  
 * As a user I should be able to register for an account and login.
 * As a user I should be able to view created posts.
-* As an admin I should be able to create an entry for a new champion that a user than then select when creating a new post.
+* As an admin I should be able to create an entry for a new champion that a user can then select when creating a new post.
 * As a registered user I should be able to create a post containing my guide/tips for a specific champion in a role.
 * As a registered user I should be able to like posts.
+* As a registered user I can comment on user posts.
 * As a user I can contact the site owners to provide feedback or suggestions
  
 #### First Time Visitor Goals
@@ -49,6 +51,7 @@ The purpose of this website it to provide a place where people can post their ow
 * I should be able to login (Or register if I have not done so at this point) to my account.
 * I should be able to create a post (if logged in).
 * I should be able to like a post (if logged in).
+* I should be able to comment on a possed (if logged in)
  
 ***
 ## **Design**
@@ -57,8 +60,10 @@ The purpose of this website it to provide a place where people can post their ow
  
 ![My original chosen colour scheme](/assets/images/colour_scheme.png)
 
+
 The colour scheme I have chosen is based off of the league of legends logo's gold and a very dark blue to provide a suitable contrast. I have brightened the gold a bit to provide a better contrast for the visually impaired. This scheme is commonly used within various league of legends media so it will match the feel provided by Riot games.
  
+
 
  
 ### **Typography**
@@ -69,12 +74,6 @@ The colour scheme I have chosen is based off of the league of legends logo's gol
  
 [Font Awesome](https://fontawesome.com) was used for the Github and Linkedin logos in the footer.
  
-### **Imagery**
- 
-[Cloudinary]() was used as an external image hosting site, which is required due to the ephemeral system used with Heroku apps, which would cause all images to be lost if the app has to be rebuilt for any reason.
-
-[Riot Developer Portal](https://developer.riotgames.com/docs/lol) - The positional icons used to display the champion role or position in the user post were downloaded from an official Riot Games source.
- 
 ### **Wireframes**
  
 Wireframes created using Balsamiq.
@@ -83,30 +82,39 @@ Wireframes created using Balsamiq.
 ![Wireframe for Home page](/assets/images/home.png)
 ![Wireframe for Desktop Home page](/assets/images/home-alt.png)
 
+
  #### **Champion List page**
 ![Wireframe for Champion List page](/assets/images/champion-list.png)
 ![Wireframe for Desktop Champion List page](/assets/images/champion-alt.png)
+
 
  #### **Login/registration page**
 ![Wireframe for Login page](/assets/images/login.png)
 ![Wireframe for Register page](/assets/images/register.png)
 
+
  #### **Contacts Us page**
 ![Wireframe for Contact Us page](/assets/images/contact-us.png)
+
 
  #### **Champion Details page**
  I had originally had a much bigger scope for the site but felt this was not required for the MVP. However this may be implemented in the future.
 
+
 ![Wireframe for Champion Details page](/assets/images/details.png)
 ![Wireframe for Desktop Champion Details page](/assets/images/details-alt.png)
 
+
 ### **Database Design**
 
+
 As the project features will require the use of databases, I have provided a diagram, and an example of the database that will be setup, for the site below.
+
 
 #### **Champion database**
 ![Champion database diagram](/assets/images/champion_diag.png)
 ![Champion database example](/assets/images/champion_example.png)
+
 
 #### **Post database**
 ![Post database diagram](/assets/images/post_diag.png)
@@ -116,15 +124,25 @@ As the project features will require the use of databases, I have provided a dia
  
 ### **Future Implementations**
  
+As I originally had a much larger scope for this project, there are a bunch of features that I deemed not required for the project to be functional to users;
+
+
 * Password reset and email confirmation for account registration.
 * A champion list page that displays basic information about the champion such as ability rundown and basic lore.
-* Use the Riot API to add champion winrate on current page to the above mentioned champion page.
+* Use the Riot API to add champion win rate on the current page to the above mentioned champion page.
 * Add full CRUD functionality to the champion list page instead of getting them to do it through the admin panel.
+* Ability for users to edit and delete their comments.
+* Ability for users to save their posts as drafts and come back to them later.
+* Ability for staff/admins to view and approve new comments without having to use the admin panel.
+* The ability for staff/admins to upload champion portraits that could be displayed on the post list or slash arts for the actual posts themselves.
+* The ability to sort the post list out. Ascending or descending post date, number of likes or the ability to filter by champion/position.
+* Add confirmation requirements for editing and deleting posts.
+* Position icons displaying on the post list, post, and champion list pages.
  
 ### **Accessibility**
  
 While coding this site I have been mindful to ensure that the website is accessible and friendly. I have achieved this by:
-  * Using descriptive alt attributes on all images used.
+  * Using descriptive alt tags where required.
   * Making sure that there is sufficient colour contrast throughout the entire site.
   * Use semantic HTML where possible.
 ***
@@ -141,7 +159,7 @@ HTML, CSS, Javascript, Python, Markdown
 * [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - Used for making an authentication system on the website.
 * [Django CrispyForms](https://django-crispy-forms.readthedocs.io/en/latest/) - Used to help quickly create forms on the new post page.
 * [POSTGRESQL](https://www.postgresql.org) - An open sourced database management system used in this project.
-* [ElephantSQL](https://www.elephantsql.com) - Used to quickly set up and maintain my POSTRESQL databases.
+* [ElephantSQL](https://www.elephantsql.com) - Used to quickly set up and maintain my POSTGRESQL databases.
 * [Git](https://git-scm.com) - For version control.
 * [Github](https://github.com) - To save and store all the files of the site.
 * [CodeAnywhere](https://codeanywhere.com/?ref=marcomartins11) - The IDE used for all of the coding. Also used to write the README.
@@ -149,9 +167,8 @@ HTML, CSS, Javascript, Python, Markdown
 * [Google Fonts](https://fonts.google.com) - To import the fonts used on the site.
 * [Font Awesome](https://fontawesome.com) - For the down arrows used.
 * [OperaGX](https://www.opera.com/gx) - Dev Tools to troubleshoot and test features, solve issues with responsiveness and styling.
-* [Am I Responsive?](https://ui.dev/amiresponsive) - To show the website image on a variety of devices.
+* [Cloudinary](https://cloudinary.com) was used as an external static file hosting site, which is required due to the ephemeral system used with Heroku apps, which would cause all images to be lost if the app has to be rebuilt for any reason.
 * [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en) - Chrome DevTool extension that I use on my OperaGX browser.
-* [Ico Converter](https://www.icoconverter.com) - Used to create my favicon from an image.
 ***
 ## **Deployment & Local Development**
  
@@ -197,19 +214,19 @@ There are a few different sites that I used to learn the required skills to deve
 * [Code Institute](https://codeinstitute.net) - Used the LMS to learn about Agile development, Bootstrap, Testing, Django and more. Also used their slack group to ask questions about various things.
 * Code Institute Slack - Used to get answers for specific queries.
 * [Stack Overflow](https://stackoverflow.com) - Used as my main search point after Slack to get the answers I needed.
-* [Django](https://docs.djangoproject.com/en/3.2/) - Documentation used for various parts of Django and it's libraries.
+* [Django](https://docs.djangoproject.com/en/3.2/) - Documentation used for various parts of Django and its libraries.
  
 ### **Code Used**
  
 I have taken and edited some code for the basic templates to show my views on the home page. Code taken from https://github.com/Welshy92/i-think-blog/blob/main/templates/index.html
  
-### **Media**
-
-* [Riot Developer Portal](https://developer.riotgames.com/docs/lol) - Official League of Legends position icons direct from Riots developer portal.
- 
 ### **Acknowledgments**
  
-* [Jo Heyndels](https://www.linkedin.com/in/joke-heyndels/) - Member of the Code Institute team that helped me with a few of my Django and CodeAnywhere enquires/concerns.
+* [Jo Heyndels](https://www.linkedin.com/in/joke-heyndels/) - Member of the Code Institute team that helped me with a few of my Django and CodeAnywhere enquiries/concerns.
 * [Niel McEwen](https://www.linkedin.com/in/niel-mcewen-43b3a0/?originalSubdomain=ie) - Member of the Code Institute team that also helped me with some of the CodeAnywhere enquiries/concerns.
-* [Kasia Bogucka](https://www.linkedin.com/in/kasbogucka/) - Member of the Code Insititute team that has created some nice video content for both this project specifically and for CodeAnywhere.
+* [Kasia Bogucka](https://www.linkedin.com/in/kasbogucka/) - Member of the Code Institute team that has created some nice video content for both this project specifically and for CodeAnywhere.
 * [Ian Meigh](https://www.linkedin.com/in/ianmeigh/) - Code Institute Alumni that helped me figure out what to do with my EditPost view.
+* [Seán Murphy](https://www.linkedin.com/in/sean-murphy-dev/) - Code Institute tutor that helped me get my project deployed after builds were failing on Heroku at the final deployment stage.
+
+
+
