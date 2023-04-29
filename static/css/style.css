@@ -73,7 +73,11 @@ footer {
 }
    
    /* Bootstrap form overrides */
-   
+
+.text-muted {
+    color: #010020;
+}   
+
 .pagination {
     margin: 0;
 }
