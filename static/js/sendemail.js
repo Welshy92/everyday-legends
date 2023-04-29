@@ -25,7 +25,7 @@ function emailSent() {
       alert("Name must be filled out");
     }
     else if (y == "") {
-        alert("Message cannot be blank")
+        alert("Message cannot be blank");
     }
     else {
     alert("Message sent!");
