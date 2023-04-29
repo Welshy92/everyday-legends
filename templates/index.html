@@ -17,15 +17,15 @@
                             <div class="image-container">
                                 <img class="card-img-top">
                                     {% if "TOP" in post.position %}
-                                        <img src="{% static 'images/pos-top.png' %}" alt="Top Lane">
+                                        <img src="https://static.wikia.nocookie.net/leagueoflegends/images/e/ef/Top_icon.png" alt="Top Lane">
                                     {% elif "JNG" in post.position %}
-                                        <img src="{% static 'images/pos-jng.png' %}" alt="Jungle">
+                                        <img src="https://static.wikia.nocookie.net/leagueoflegends/images/1/1b/Jungle_icon.png" alt="Jungle">
                                     {% elif "MID" in post.position %}
-                                        <img src="{% static 'images/pos-mid.png' %}" alt="Mid Lane">
+                                        <img src="https://static.wikia.nocookie.net/leagueoflegends/images/9/98/Middle_icon.png" alt="Mid Lane">
                                     {% elif "ADC" in post.position %}
-                                        <img src="{% static 'images/pos-adc.png' %}" alt="Marksman">
+                                        <img src="https://static.wikia.nocookie.net/leagueoflegends/images/9/97/Bottom_icon.png" alt="Marksman">
                                     {% elif "SUP" in post.position %}
-                                        <img src="{% static 'images/pos-sup.png' %}" alt="Support">
+                                        <img src="https://static.wikia.nocookie.net/leagueoflegends/images/e/e0/Support_icon.png" alt="Support">
                                     {% endif %}
                             </div>
                             <a href="{% url 'user_post' post.slug  %}" class="user-post">
