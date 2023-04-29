@@ -41,11 +41,11 @@
                             {% if request.user == post.author %}
                             <p>
                                 <a href="{% url 'edit_post' post.slug %}" class="btn-anc">
-                                    <button type="submit">EDIT</button>
+                                    <button class="edit-btn" type="submit">EDIT</button>
                                 </a>
                                 &nbsp;
                                 <a href="{% url 'delete_post' post.slug %}" class="btn-anc">
-                                    <button type="submit">DELETE</button>
+                                    <button class="delete-btn" type="submit">DELETE</button>
                                 </a>
                             </p>
                             {% endif %}

@@ -145,6 +145,28 @@ footer {
     opacity: 1.0;
     border: 2px solid black;
 }
+
+.btn-anc {
+    text-decoration: none;
+}
+
+.edit-btn {
+    background-color: #010020;
+    color: greenyellow;
+}
+
+.delete-btn {
+    background-color: #010020;
+    color: red;
+}
+
+.page-link {
+    background-color: #EFD690;
+    color: #010020;
+    border-radius: 3px;
+}
+
+
    
    /* Text stylings */
    
