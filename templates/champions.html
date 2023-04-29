@@ -18,17 +18,6 @@
                         <div class="card-body">
                             <div class="image-container">
                                 <img class="card-img-top">
-                                {% if "TOP" in post.position %}
-                                <img src="https://static.wikia.nocookie.net/leagueoflegends/images/e/ef/Top_icon.png" alt="Top Lane">
-                                {% elif "JNG" in post.position %}
-                                <img src="https://static.wikia.nocookie.net/leagueoflegends/images/1/1b/Jungle_icon.png" alt="Jungle">
-                                {% elif "MID" in post.position %}
-                                <img src="https://static.wikia.nocookie.net/leagueoflegends/images/9/98/Middle_icon.png" alt="Mid Lane">
-                                {% elif "ADC" in post.position %}
-                                <img src="https://static.wikia.nocookie.net/leagueoflegends/images/9/97/Bottom_icon.png" alt="Marksman">
-                                {% elif "SUP" in post.position %}
-                                <img src="https://static.wikia.nocookie.net/leagueoflegends/images/e/e0/Support_icon.png" alt="Support">
-                                {% endif %}
                             </div>
                                 <h2 class="card-title">{{ champ.champion_name }}</h2>
                                 <p class="card-text">{{ champ.title }}</p>
