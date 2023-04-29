@@ -18,17 +18,17 @@
                         <div class="card-body">
                             <div class="image-container">
                                 <img class="card-img-top">
-                                    {% if "TOP" in champ.primary_role %}
-                                        <img src="../static/images/pos-top.png" alt="Top Lane">
-                                    {% elif "JNG" in champ.primary_role %}
-                                        <img src="../static/images/pos-jng.png" alt="Jungle">
-                                    {% elif "MID" in champ.primary_role %}
-                                        <img src="../static/images/pos-mid.png" alt="Mid Lane">
-                                    {% elif "ADC" in champ.primary_role %}
-                                        <img src="../static/images/pos-adc.png" alt="Marksman">
-                                    {% elif "SUP" in champ.primary_role %}
-                                        <img src="../static/images/pos-sup.png" alt="Support">
-                                    {% endif %}
+                                {% if "TOP" in post.position %}
+                                <img src="{% static 'images/pos-top.png' %}" alt="Top Lane">
+                                {% elif "JNG" in post.position %}
+                                <img src="{% static 'images/pos-jng.png' %}" alt="Jungle">
+                                {% elif "MID" in post.position %}
+                                <img src="{% static 'images/pos-mid.png' %}" alt="Mid Lane">
+                                {% elif "ADC" in post.position %}
+                                <img src="{% static 'images/pos-adc.png' %}" alt="Marksman">
+                                {% elif "SUP" in post.position %}
+                                <img src="{% static 'images/pos-sup.png' %}" alt="Support">
+                                {% endif %}
                             </div>
                                 <h2 class="card-title">{{ champ.champion_name }}</h2>
                                 <p class="card-text">{{ champ.title }}</p>
