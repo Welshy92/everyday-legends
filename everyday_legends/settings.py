@@ -38,6 +38,7 @@ ALLOWED_HOSTS = [
     'everyday-legends.herokuapp.com',
     'localhost',
     '8000-welshy92-everyday-legend-skbf9y2714.us2.codeanyapp.com',
+    'https://everyday-legends.onrender.com',
     ]
 
 RENDER_EXTERNAL_HOSTNAME = https://everyday-legends.onrender.com
