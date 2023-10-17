@@ -41,7 +41,7 @@ ALLOWED_HOSTS = [
     'https://everyday-legends.onrender.com',
     ]
 
-RENDER_EXTERNAL_HOSTNAME = https://everyday-legends.onrender.com
+RENDER_EXTERNAL_HOSTNAME = 'https://everyday-legends.onrender.com'
 
 # Application definition
 
