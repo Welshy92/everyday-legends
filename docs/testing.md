@@ -1,7 +1,7 @@
 # **Everyday Legends - Testing**
 ![Responsive Views of home page](../assets/images/responsive.png)
  
-[Everyday Legends on Heroku.](https://everyday-legends.herokuapp.com)
+[Everyday Legends on render.](https://everyday-legends.onrender.com)
 
 
  
