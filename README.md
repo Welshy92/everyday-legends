@@ -5,7 +5,7 @@ Everyday legends is a platform in which players of the game 'League of Legends' 
 ![Responsive View of home page](/assets/images/responsive.png)
  
  
-[Everyday Legends live on Heroku](https://everyday-legends.herokuapp.com)
+[Everyday Legends live on Heroku](https://everyday-legends.onrender.com)
  
 ## **CONTENTS**
  
@@ -175,7 +175,7 @@ HTML, CSS, Javascript, Python, Markdown
 ## **Deployment & Local Development**
  
 ### **Deployment**
-The site is deployed using Heroku. Visit the deployed site [here.](https://everyday-legends.herokuapp.com)
+The site was orginally deployed using Heroku.
  
 To do this I:
 1. Logged into [Heroku](https://www.heroku.com)
