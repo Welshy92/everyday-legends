@@ -5,7 +5,7 @@ Everyday legends is a platform in which players of the game 'League of Legends' 
 ![Responsive View of home page](/assets/images/responsive.png)
  
  
-[Everyday Legends live on Heroku](https://everyday-legends.onrender.com)
+[Everyday Legends live on render](https://everyday-legends.onrender.com)
  
 ## **CONTENTS**
  
